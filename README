@@ -1,0 +1,8 @@
+# 使用方式
+0、使用前请执行下面的安装准备
+yum install python-pip;pip install paramiko;pip install pexpect
+1、在conf.py中定义配置文件，定义主机IP，用户名和密码，和key的path路径，这里的用户名和密码是统一的
+2、把所有的脚本考到主机上，然后使用python bin.py ，这里需要说明的是，如果有之前做好的ssh互信，会被全部删掉，
+所以如果使用本脚本不当造成的配置丢失损失自己负责
+3、目前还不支持批量分发，仅仅是把脚本考到对应主机上，然后手动执行，后期可以考虑使用ansible
+4、注意点就这些了
